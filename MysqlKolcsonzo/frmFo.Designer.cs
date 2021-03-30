@@ -63,6 +63,7 @@
             this.btnKolcsonzes.TabIndex = 2;
             this.btnKolcsonzes.Text = "Kölcsönzés";
             this.btnKolcsonzes.UseVisualStyleBackColor = true;
+            this.btnKolcsonzes.Click += new System.EventHandler(this.btnKolcsonzes_Click);
             // 
             // btnVisszavetel
             // 

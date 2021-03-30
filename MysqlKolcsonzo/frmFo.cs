@@ -43,5 +43,11 @@ namespace MysqlKolcsonzo
             frmKonyvek formKonyv = new frmKonyvek(adatbazis);
             formKonyv.ShowDialog();
         }
+
+        private void btnKolcsonzes_Click(object sender, EventArgs e)
+        {
+            frmKolcsonzes formKolcsonzes = new frmKolcsonzes(adatbazis);
+            formKolcsonzes.ShowDialog();
+        }
     }
 }
