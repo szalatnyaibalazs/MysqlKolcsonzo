@@ -24,6 +24,7 @@ namespace MysqlKolcsonzo
             {
                 btnKolcsonzes.Enabled = true;
                 btnVisszavetel.Enabled = true;
+                btnKonyvkarbantartas.Enabled = true;
             }
         }
 
@@ -48,6 +49,18 @@ namespace MysqlKolcsonzo
         {
             frmKolcsonzes formKolcsonzes = new frmKolcsonzes(adatbazis);
             formKolcsonzes.ShowDialog();
+        }
+
+        private void btnVisszavetel_Click(object sender, EventArgs e)
+        {
+            frmVisszavetel formVissza = new frmVisszavetel(adatbazis);
+            formVissza.ShowDialog();
+        }
+
+        private void btnKonyvkarbantartas_Click(object sender, EventArgs e)
+        {
+            frmKonykarbantartas formkonykar = new frmKonykarbantartas(adatbazis);
+            formkonykar.ShowDialog();
         }
     }
 }

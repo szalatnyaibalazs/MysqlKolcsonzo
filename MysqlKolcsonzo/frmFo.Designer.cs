@@ -32,6 +32,7 @@
             this.btnKonyvek = new System.Windows.Forms.Button();
             this.btnKolcsonzes = new System.Windows.Forms.Button();
             this.btnVisszavetel = new System.Windows.Forms.Button();
+            this.btnKonyvkarbantartas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKereses
@@ -74,12 +75,25 @@
             this.btnVisszavetel.TabIndex = 3;
             this.btnVisszavetel.Text = "Visszavétel";
             this.btnVisszavetel.UseVisualStyleBackColor = true;
+            this.btnVisszavetel.Click += new System.EventHandler(this.btnVisszavetel_Click);
+            // 
+            // btnKonyvkarbantartas
+            // 
+            this.btnKonyvkarbantartas.Enabled = false;
+            this.btnKonyvkarbantartas.Location = new System.Drawing.Point(839, 40);
+            this.btnKonyvkarbantartas.Name = "btnKonyvkarbantartas";
+            this.btnKonyvkarbantartas.Size = new System.Drawing.Size(177, 157);
+            this.btnKonyvkarbantartas.TabIndex = 4;
+            this.btnKonyvkarbantartas.Text = "Könyvek karbantartása";
+            this.btnKonyvkarbantartas.UseVisualStyleBackColor = true;
+            this.btnKonyvkarbantartas.Click += new System.EventHandler(this.btnKonyvkarbantartas_Click);
             // 
             // frmFo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 287);
+            this.ClientSize = new System.Drawing.Size(1085, 257);
+            this.Controls.Add(this.btnKonyvkarbantartas);
             this.Controls.Add(this.btnVisszavetel);
             this.Controls.Add(this.btnKolcsonzes);
             this.Controls.Add(this.btnKonyvek);
@@ -101,5 +115,6 @@
         private System.Windows.Forms.Button btnKonyvek;
         private System.Windows.Forms.Button btnKolcsonzes;
         private System.Windows.Forms.Button btnVisszavetel;
+        private System.Windows.Forms.Button btnKonyvkarbantartas;
     }
 }
